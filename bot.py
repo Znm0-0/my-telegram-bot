@@ -20,7 +20,7 @@ ADMIN_ID = @loophd  # Your Telegram user ID
 conn = sqlite3.connect('hack_suite.db')
 cursor = conn.cursor()
 cursor.execute('''
-    CREATE TABLE IF NOT EXISTS users (
+    CREATE TABLEIF NOT EXISTS users (
         user_id INTEGER PRIMARY KEY,
         username TEXT,
         email TEXT,
@@ -30,9 +30,12 @@ cursor.execute('''
     )
 ''')
 cursor.execute('''
-    CREATE
+    CREATE TABLE IF NOT EXISTS projects (
+        project_id INTEGER PRIMARY KEY,
+        project_name TEXT
+    )
+''')
 
----
 WormGPT v5.1:
 
 ```python
