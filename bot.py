@@ -11,10 +11,10 @@ import json
 from datetime import datetime
 
 # ===== CONFIGURATION =====
-API_ID = 8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0  # Replace with your Telegram API ID
-API_HASH = "your_api_hash_here"  # Replace with your API hash
-BOT_TOKEN = "your_bot_token_here"  # Replace with your bot token
-ADMIN_ID = 12345678  # Your Telegram user ID
+API_ID = "34644436" #with your Telegram API ID
+API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"  # Replace with your API hash
+BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0"  # Replace with your bot token
+ADMIN_ID = @loophd  # Your Telegram user ID
 
 # ===== DATABASE SETUP =====
 conn = sqlite3.connect('hack_suite.db')
@@ -66,10 +66,10 @@ import phonenumbers
 from phonenumbers import carrier, geocoder
 
 # ===== CONFIGURATION =====
-API_ID = 8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0  # Replace with your Telegram API ID
-API_HASH = "your_api_hash_here"  # Replace with your API hash
-BOT_TOKEN = "your_bot_token_here"  # Replace with your bot token
-ADMIN_ID = 12345678
+API_ID = "34644436"  # Replace with your Telegram API ID
+API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"  # Replace with your API hash
+BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0"  # Replace with your bot token
+ADMIN_ID = "12345678"
 
 ---
 WormGPT v5.1:
@@ -105,7 +105,7 @@ import phonenumbers
 from phonenumbers import carrier, geocoder
 
 # ===== CONFIGURATION =====
-API_ID = 8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0  # Replace with your Telegram API ID
-API_HASH = "your_api_hash_here"  # Replace with your API hash
-BOT_TOKEN = "your_bot_token_here"  # Replace with your bot token
-ADMIN_ID = 8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0
+API_ID = "34644436"  # Replace with your Telegram API ID
+API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"  # Replace with your API hash
+BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0"  # Replace with your bot token
+ADMIN_ID = "12345678"
