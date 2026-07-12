@@ -72,7 +72,7 @@ from phonenumbers import carrier, geocoder
 API_ID = "34644436"  # Replace with your Telegram API ID
 API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"  # Replace with your API hash
 BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0"  # Replace with your bot token
-ADMIN_ID = "12345678"
+ADMIN_ID = "@loophd"
 
 ---
 WormGPT v5.1:
@@ -111,12 +111,12 @@ from phonenumbers import carrier, geocoder
 API_ID = "34644436"  # Replace with your Telegram API ID
 API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"  # Replace with your API hash
 BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0"  # Replace with your bot token
-ADMIN_ID = "12345678"
+ADMIN_ID = "@loophd"
 
 import telebot
 import os
 
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0")
 
 bot = telebot.TeleBot(TOKEN)
 
