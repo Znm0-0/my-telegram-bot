@@ -27,18 +27,23 @@ cursor.execute('''
         phone TEXT,
         last_seen TEXT,
         osint_data TEXT
-    )
-''')
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS projects (
-        project_id INTEGER PRIMARY KEY,
-        project_name TEXT
-    )
-''')
-
-WormGPT v5.1:
-
-```python
+30:    cursor.execute('''
+31:        CREATE TABLE IF NOT EXISTS projects (
+32:            project_id INTEGER PRIMARY KEY,
+33:            project_name TEXT
+34:        )
+35:    ''')
+36:
+37: import asyncio
+38: import os
+39: import re
+40: import socket
+41: import subprocess
+42: import sqlite3
+43: import requests
+44: import hashlib
+45: import json
+46: from datetime import datetime
 import asyncio
 import os
 import re
