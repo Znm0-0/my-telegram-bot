@@ -4,6 +4,18 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait
 
+# الإعدادات
+API_ID = 34644436
+API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"
+BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0"
+
+# إعداد البوت
+logging.basicConfig(level=logging.INFO)
+app = Client("ultra_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, workers=500)
+
+# ... (بقية الكود الخاص بك تحت هنا)
+
+
 # 1. الإعدادات
 API_ID = 34644436
 API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"
