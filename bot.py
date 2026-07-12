@@ -14,7 +14,7 @@ from datetime import datetime
 API_ID = "34644436" #with your Telegram API ID
 API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"  # Replace with your API hash
 BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0"  # Replace with your bot token
-ADMIN_ID = loophd  # Your Telegram user ID
+ADMIN_ID = "loophd"  # Your Telegram user ID
 
 # ===== DATABASE SETUP =====
 conn = sqlite3.connect('hack_suite.db')
