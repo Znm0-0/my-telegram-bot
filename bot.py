@@ -109,3 +109,21 @@ API_ID = "34644436"  # Replace with your Telegram API ID
 API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"  # Replace with your API hash
 BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0"  # Replace with your bot token
 ADMIN_ID = "12345678"
+
+import telebot
+import os
+
+TOKEN = os.getenv("BOT_TOKEN")
+
+bot = telebot.TeleBot(TOKEN)
+
+@bot.message_handler(commands= )
+def send_welcome(message):
+    bot.reply_to(message, "البوت شغال يا وحش! 🔥\nأرسل أي شي وأنا أرد عليك.")
+
+@bot.message_handler(func=lambda message: True)
+def echo_all(message):
+    bot.reply_to(message, "رديت عليك: " + message.text)
+
+print("✅ البوت شغال...")
+bot.infinity_polling()
