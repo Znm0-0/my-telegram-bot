@@ -28,66 +28,30 @@ import phonenumbers
 from phonenumbers import carrier, geocoder
 
 # ===== CONFIGURATION =====
-API_ID = "34644436"  # Replace with your Telegram API ID
-API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7"  # Replace with your API hash
-BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0"  # Replace with your bot token
-ADMIN_ID = "8461970177"
+API_ID = 34644436 # ضع رقم الـ API_ID الخاص بك هنا
+API_HASH = "2d0a19706e5c3de7fa2969250ad66ad7" # ضع الـ API_HASH هنا
+BOT_TOKEN = "8192761045:AAHWGKwdB6s0cYoixwFK--NiQy31PMyHVs0" # ضع التوكن هنا
+ADMIN_ID = 8461970177 # ضع الأيدي الرقمي الخاص بك هنا
 
 # ===== DATABASE SETUP =====
 conn = sqlite3.connect('hack_suite.db')
 cursor = conn.cursor()
-
 cursor.execute('''
-CREATE TABLE IF NOT EXISTS users (
-    user_id INTEGER PRIMARY KEY,
-    username TEXT,
-    email TEXT,
-    phone TEXT,
-    last_seen TEXT,
-    osint_data TEXT
-)
+    CREATE TABLE IF NOT EXISTS users (
+        user_id INTEGER PRIMARY KEY,
+        username TEXT,
+        email TEXT,
+        phone TEXT,
+        last_seen TEXT,
+        osint_data TEXT
+    )
 ''')
-
 cursor.execute('''
-CREATE TABLE IF NOT EXISTS projects (
-    project_id INTEGER PRIMARY KEY,
-    project_name TEXT
-)
+    CREATE TABLE IF NOT EXISTS projects (
+        project_id INTEGER PRIMARY KEY,
+        project_name TEXT
+    )
 ''')
-
 conn.commit()
 
-# ===== PYROGRAM CLIENT SETUP =====
-app = Client(
-    "my_bot",
-    api_id=int(API_ID),
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN
-)
-
-# ===== MAIN HANDLER =====
-@app.on_message(filters.command("start"))
-async def start_handler(client, message: Message):
-    """Handle /start command"""
-    await message.reply_text("Welcome to the bot! 🔥")
-
-@app.on_message(filters.command("help"))
-async def help_handler(client, message: Message):
-    """Handle /help command"""
-    help_text = """
-Available commands:
-/start - Start the bot
-/help - Show this help message
-/ping - Check bot status
-"""
-    await message.reply_text(help_text)
-
-@app.on_message(filters.command("ping"))
-async def ping_handler(client, message: Message):
-    """Handle /ping command"""
-    await message.reply_to(message, "Pong! 🏓 Bot is running.")
-
-# ===== RUN BOT =====
-if __name__ == "__main__":
-    print("✅ Bot is running...")
-    app.run()
+print("Bot is ready and running!")
